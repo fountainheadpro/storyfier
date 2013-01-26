@@ -61,8 +61,10 @@ staging:
 production:
   adapter: postgresql
   encoding: unicode
-  database: stroyfier_production
+  database: d1eo6mold3u3jt
   pool: 5
-  username: stroyfier
-  password: password
+  username: kxhkhhibwnmepa
+  password: NK8kCoVDPMD_iGt9rDBmrw9cT-
   template: template0
+  host: ec2-54-243-179-99.compute-1.amazonaws.com
+  port: 5432

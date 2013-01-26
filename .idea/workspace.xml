@@ -28,10 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="1" selection-start="143" selection-end="143" vertical-scroll-proportion="0.23541248">
+            <state line="7" column="1" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="12" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.8470825">
               <folding />
             </state>
           </provider>
@@ -47,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/apps/storyfier/models/option.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/json/questions/venturec/5_intro.json" />
         <option value="$PROJECT_DIR$/app/assets/json/questions/venturec/11_out_taxi.json" />
         <option value="$PROJECT_DIR$/app/assets/json/questions/venturec/12_garb_track.json" />
@@ -63,11 +71,12 @@
         <option value="$PROJECT_DIR$/app/assets/json/questions/venturec/10_taxi_fare.json" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
+    <option name="x" value="87" />
     <option name="y" value="22" />
     <option name="width" value="1436" />
     <option name="height" value="878" />
@@ -184,7 +193,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/conversation_engine" />
+    <property name="last_opened_file_path" value="$USER_HOME$/actions" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -441,7 +450,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="87" y="22" width="1436" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -517,13 +526,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/json/questions/venturec/4_title.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="38" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stories/venturec.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="32" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
@@ -624,7 +626,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="143" selection-end="143" vertical-scroll-proportion="0.23541248">
+        <state line="7" column="1" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="12" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.8470825">
           <folding />
         </state>
       </provider>
