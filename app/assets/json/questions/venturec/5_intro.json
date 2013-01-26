@@ -1,0 +1,15 @@
+{
+    "image": "5",
+    "tap" : true,
+    "options":[
+        {
+            "title": "Train"
+        },
+        {
+            "title": "Bus"
+        },
+        {
+            "title": "Car"
+        }
+    ]
+}

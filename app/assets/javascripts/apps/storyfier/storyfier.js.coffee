@@ -17,5 +17,5 @@ window.Storyfier =
   video_init_time: new Date().getTime()
   init: (options) ->
     unless Storyfier.router?
-      Storyfier.router = new Storyfier.Routers.StoryfierRouter(options)
+      Storyfier.router = new Storyfier.Routers.StoryRouter(options)
       Backbone.history.start()

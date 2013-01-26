@@ -1,7 +1,7 @@
-class Storyfier.Routers.storyRouter extends Backbone.Router
+class Storyfier.Routers.StoryRouter extends Backbone.Router
 
   initialize: (story) ->
-    @story=new Storyfier.Models.story(story)
+    @story=new Storyfier.Models.Story(story)
     @questions_info=@story.questions_info
     @questions=new Storyfier.Collections.QuestionsCollection()
     @current_question = @questions_info.first().get('media')
@@ -25,7 +25,6 @@ class Storyfier.Routers.storyRouter extends Backbone.Router
         noCSRF: true
         success: (data)=>
           view=@navigate_story(question)
-          view?.animate()
         error: (model,err)=>
           console.log(err)
       )
@@ -47,8 +46,8 @@ class Storyfier.Routers.storyRouter extends Backbone.Router
 
 
   show_question: (model)->
-    view = new Storyfier.Views.storyView(model: @story)
-    $("#story").html(view.render().el)
+    #view = new Storyfier.Views.StoryView(model: @story)
+    #$("#story").html(view.render().el)
     view = new Storyfier.Views.QuestionView(model: model)
     $("#story").append(view.render().el)
     @qview=view

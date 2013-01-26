@@ -14,5 +14,5 @@ class Storyfier.Models.Option extends Backbone.Model
     )
 
 
-class ConversationEngine.Collections.OptionsCollection extends Backbone.Collection
-  model: ConversationEngine.Models.Option
+class Storyfier.Collections.OptionsCollection extends Backbone.Collection
+  model: Storyfier.Models.Option

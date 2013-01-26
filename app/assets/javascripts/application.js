@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require lodash_underscore
+//= require backbone
+//= require apps/storyfier/storyfier

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :first_name, :last_name, :email, :password, :password_confirmation,
@@ -31,19 +31,18 @@ class User < ActiveRecord::Base
                                      location: data[:location],
                                      timezone: access_token[:extra][:raw_info][:timezone]
                                     ) unless (user.facebook_nickname)
-      user.ready_for_sign_in=true
-      if access_token[:extra][:raw_info][:birthday].present?
-        parameter_id = Parameter.where(name: 'date_of_birth').select(:id).first.try(:id)
-        unless UserValue.find_by_parameter_id_and_user_id(parameter_id, user.id).present?
-          UserValue.create(user: user, parameter_id: parameter_id, value: self.format_facebook_birthday(access_token[:extra][:raw_info][:birthday]))
-        end
-      end
-      if access_token[:extra][:raw_info][:gender].present?
-        parameter_id = Parameter.where(name: 'gender').select(:id).first.try(:id)
-        unless UserValue.find_by_parameter_id_and_user_id(parameter_id, user.id).present?
-          UserValue.create(user: user, parameter_id: parameter_id, value: access_token[:extra][:raw_info][:gender])
-        end
-      end
+      ##if access_token[:extra][:raw_info][:birthday].present?
+      #  parameter_id = Parameter.where(name: 'date_of_birth').select(:id).first.try(:id)
+      #  unless UserValue.find_by_parameter_id_and_user_id(parameter_id, user.id).present?
+      #    UserValue.create(user: user, parameter_id: parameter_id, value: self.format_facebook_birthday(access_token[:extra][:raw_info][:birthday]))
+      #  end
+      #end
+      #if access_token[:extra][:raw_info][:gender].present?
+      #  parameter_id = Parameter.where(name: 'gender').select(:id).first.try(:id)
+      #  unless UserValue.find_by_parameter_id_and_user_id(parameter_id, user.id).present?
+      #    UserValue.create(user: user, parameter_id: parameter_id, value: access_token[:extra][:raw_info][:gender])
+      #  end
+      #end
     else
       user=self.create!({
           first_name: data[:first_name],
@@ -63,7 +62,6 @@ class User < ActiveRecord::Base
       #UserValue.create(user: user, parameter: Parameter.find_by_name('date_of_birth'), value: self.format_facebook_birthday(access_token[:extra][:raw_info][:birthday])) if access_token[:extra][:raw_info][:birthday].present?
       #UserValue.create(user: user, parameter: Parameter.find_by_name('gender'), value: access_token[:extra][:raw_info][:gender]) if access_token[:extra][:raw_info][:gender].present?
     end
-    user.ready_for_sign_in=access_token[:extra][:raw_info][:birthday].present? && access_token[:extra][:raw_info][:gender].present?
     user
   end
 

@@ -16,9 +16,13 @@ ActiveRecord::Schema.define(:version => 20130126045732) do
   create_table "users", :force => true do |t|
     t.string   "email",                     :default => "", :null => false
     t.string   "encrypted_password",        :default => "", :null => false
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "facebook_nickname"
     t.string   "facebook_token"
     t.string   "profile_image_url"
+    t.string   "facebook_image_url"
+    t.string   "confirmation_token"
     t.string   "location"
     t.string   "timezone"
     t.string   "facebook_email"

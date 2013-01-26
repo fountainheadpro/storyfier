@@ -1,7 +1,8 @@
 Storyfier.Views ||= {}
 
 class Storyfier.Views.ShowOptionView extends Backbone.View
-  template: JST["apps/conversation/templates/option_show"]
+  template: JST["apps/storyfier/templates/option_show"]
+
   attributes:
     class: "option"
 
@@ -10,9 +11,6 @@ class Storyfier.Views.ShowOptionView extends Backbone.View
 
   render: ->
     $(@el).html(@template({title: @model.get('title')}))
-    $(@el).addClass(@model.get('class'))
-    $(@el).data('number',@options.number)
-    #$(@el).sound_button()
     return this
 
   save_selection: (e) ->

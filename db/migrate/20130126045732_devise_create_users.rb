@@ -4,9 +4,13 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ## Database authenticatable
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""
+      t.string :first_name
+      t.string :last_name
       t.string :facebook_nickname
       t.string :facebook_token
       t.string :profile_image_url
+      t.string :facebook_image_url
+      t.string :confirmation_token
       t.string :location
       t.string :timezone
       t.string :facebook_email

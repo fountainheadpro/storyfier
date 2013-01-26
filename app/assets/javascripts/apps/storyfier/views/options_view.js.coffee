@@ -15,10 +15,9 @@ class Storyfier.Views.OptionIndexView extends Backbone.View
   addAll: () ->
     i=0
     @options.each (option) =>
-      @addOne(option,i)
-      i=i+1
+      @addOne(option)
 
-  addOne: (option, i) ->
+  addOne: (option) ->
     view= new Storyfier.Views.ShowOptionView(model: option)
     @$el.append(view.render().el)
 

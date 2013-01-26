@@ -1,0 +1,23 @@
+{
+   "title":"Venture Crunch",
+   "questions":[
+      {
+         "media":"4_title",
+         "next_step":"5_intro",
+         "media_url":"/assets/questions/venturec/4_title.json"
+      },
+      {
+         "media":"5_intro",
+         "prev_step":"4_title",
+         "next_step":"6_bus",
+         "media_url":"/assets/questions/venturec/5_intro.json"
+      },
+      {
+         "media":"6_bus",
+         "prev_step":"5_intro",
+         "next_step":"7_49rs",
+         "media_url":"/assets/questions/venturec/6_bus.json"
+      }
+   ],
+   "name":"venturec"
+}
