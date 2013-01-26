@@ -10,12 +10,17 @@ class Storyfier.Models.Question extends Backbone.Model
 
   initialize: ()->
     @on("change:options", @init_options)
-
+    @on("change:continue", @add_option)
 
   init_options:()->
     if @has('options')
       @options=new Storyfier.Collections.OptionsCollection(@get('options'), validate: false)
       @unset('options')
+
+  add_option:()->
+    if @has('continue') && @get('continue')
+      @options=new Storyfier.Collections.OptionsCollection()
+      @options.add(new Storyfier.Models.Option(title: 'continue'))
 
   url: ()->
     return @get('media_url')

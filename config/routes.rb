@@ -2,7 +2,7 @@ Storyfier::Application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
 
-  root :to => "story#show"
+  root :to => "story#index"
 
   resources :story
 

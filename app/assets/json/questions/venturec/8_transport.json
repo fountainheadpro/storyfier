@@ -1,4 +1,11 @@
 {
-    "image": "8",
-    "continue" : true
+    "image": "g",
+    "options":[
+        {
+            "title": "Taxi"
+        },
+        {
+            "title": "Call Friend"
+        }
+    ]
 }

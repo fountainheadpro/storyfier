@@ -1,4 +1,11 @@
 {
-    "image": "10",
-    "continue" : true
+    "image": "i",
+    "options":[
+        {
+            "title": "Stay"
+        },
+        {
+            "title": "Bail"
+        }
+    ]
 }

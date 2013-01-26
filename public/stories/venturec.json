@@ -8,16 +8,54 @@
       },
       {
          "media":"5_intro",
-         "prev_step":"4_title",
          "next_step":"6_bus",
          "media_url":"/assets/questions/venturec/5_intro.json"
       },
       {
          "media":"6_bus",
-         "prev_step":"5_intro",
          "next_step":"7_49rs",
          "media_url":"/assets/questions/venturec/6_bus.json"
-      }
+      },
+       {
+          "media":"7_49rs",
+          "next_step":"8_transport",
+          "media_url":"/assets/questions/venturec/7_49rs.json"
+       },
+       {
+          "media":"8_transport",
+          "next_step":"9_taxi",
+          "media_url":"/assets/questions/venturec/8_transport.json"
+       },
+       {
+          "media":"9_taxi",
+          "next_step":"10_taxi_fare",
+          "media_url":"/assets/questions/venturec/9_taxi.json"
+       },
+        {
+           "media":"10_taxi_fare",
+           "next_step":"11_out_taxi",
+           "media_url":"/assets/questions/venturec/10_taxi_fare.json"
+        },
+        {
+           "media":"11_out_taxi",
+           "next_step":"12_garb_track",
+           "media_url":"/assets/questions/venturec/11_out_taxi.json"
+        },
+        {
+           "media":"12_garb_track",
+           "next_step":"13_ready",
+           "media_url":"/assets/questions/venturec/12_garb_track.json"
+        },
+        {
+           "media":"13_ready",
+           "next_step":"14_nailed",
+           "media_url":"/assets/questions/venturec/13_ready.json"
+        },
+        {
+           "media":"14_nailed",
+           "media_url":"/assets/questions/venturec/14_nailed.json"
+        }
    ],
    "name":"venturec"
 }
+

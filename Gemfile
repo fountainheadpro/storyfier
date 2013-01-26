@@ -12,7 +12,6 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem "asset_sync", '~> 0.5.5', :git => "git@github.com:fountainheadpro/asset_sync.git"
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
   gem 'ejs'

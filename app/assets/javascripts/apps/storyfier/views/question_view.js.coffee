@@ -21,9 +21,9 @@ class Storyfier.Views.QuestionView extends Backbone.View
     @model=model
     @cleanup()
     if @model.has('image')
-      image_path="/assets/images/#{@model.get('image')}.png"
+      image_path="/assets/#{@model.get('image')}.jpg"
       $('.question_image_container').css('background-image', "url('#{image_path}')")
-    if @model.has('tap') && @model.get('tap')
+    if (@model.has('tap') && @model.get('tap'))
       $('.question_image_container').on('click',
         ()->
           Storyfier.router.load_next_step()
