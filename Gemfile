@@ -15,7 +15,6 @@ group :assets do
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
   gem 'ejs'
-  gem 'haml-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
@@ -24,7 +23,7 @@ end
 
 gem 'jquery-rails'
 gem "pg", ">= 0.14.1"
-
+gem 'haml-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
