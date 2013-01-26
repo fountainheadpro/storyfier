@@ -1,0 +1,5 @@
+- unless user_signed_in?
+  .row{style: 'border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: grey'}
+    =render 'shared/sign_in_social'
+- else
+  =render 'shared/write_template'
