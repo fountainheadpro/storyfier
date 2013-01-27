@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<script>
+			ext.IDTK_APP.addEventListener("forwardpageload", function(pageURL)
+			{
+				var jsCode = "window.ext.IDTK_APP.makeCall('show');";
+	            ext.IDTK_APP.makeCallAsync("forward", jsCode);
+			});
+            var jsCode = "ext.IDTK_APP.makeCall('loadPath', '/story');";
+            ext.IDTK_APP.makeCallAsync("forward", jsCode);
+		</script>
+	</head>
+</html>
